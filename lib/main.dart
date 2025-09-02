@@ -1,8 +1,8 @@
+import 'package:bloc_cubit_practice/presentation/screens/products_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,13 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: Colors.black,
-        appBarTheme: AppBarTheme(color: Colors.black, toolbarHeight: 50),
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: AppBarTheme(color: Colors.white, toolbarHeight: 50),
       ),
-      home: ,
+      home: ProductsScreen(),
     );
   }
 }
